@@ -1,0 +1,12 @@
+[credential "https://github.com"]
+	helper = 
+[user]
+	name = Zedro
+	email = zedro@zedro.com
+[core]
+	editor = nvim
+[credential]
+	helper = cache
+[submodule]
+	recurse = true
+
