@@ -96,10 +96,10 @@ return {
           -- {
           --   require("noice").api.statusline.mode.get,
           --   cond = require("noice").api.statusline.mode.has,
-          --   color = { fg = "#ff9e64" },
+          --   color = { fg = "#6d597a" },
           -- },
-          { virtual_env, color = { fg = "#e8eb34" } },
-          { nix_shell, color = { fg = "#7ab0df" } },
+          { virtual_env, color = { fg = "#b56576" } },
+          { nix_shell, color = { fg = "#6d597a" } },
           ollama_component,
         },
         -- Right side
@@ -107,7 +107,7 @@ return {
           {
             lazy_status.updates,
             cond = lazy_status.has_updates,
-            color = { fg = "#ff9e64" },
+            color = { fg = "#6d597a" },
           },
           { "encoding" },
           { "fileformat" },
@@ -123,13 +123,13 @@ return {
           {
             'filename',
             path = 1, -- 0: Just the filename
-            color = { fg = "#111111" },
+            color = { fg = "#355070" },
           },
         },
         lualine_x = {
           {
             'location',
-            color = { fg = "#111111" },
+            color = { fg = "#355070" },
           }
         },
         lualine_y = {},

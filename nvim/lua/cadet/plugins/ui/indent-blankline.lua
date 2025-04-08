@@ -17,8 +17,8 @@ return {
     -- create the highlight groups in the highlight setup hook, so they are reset
     -- every time the colorscheme changes
     hooks.register(hooks.type.HIGHLIGHT_SETUP, function ()
-      -- vim.api.nvim_set_hl(0, "LightPurple", { fg = "#715da8" })
-      vim.api.nvim_set_hl(0, "DarkPurple", { fg = "#5232a8" })
+      -- vim.api.nvim_set_hl(0, "LightPurple", { fg = "#CE5641" })
+      vim.api.nvim_set_hl(0, "DarkPurple", { fg = "#CE5641" })
     end)
 
     require("ibl").setup {

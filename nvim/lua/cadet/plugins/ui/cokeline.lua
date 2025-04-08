@@ -11,9 +11,9 @@ return {
     local is_picking_close = require('cokeline.mappings').is_picking_close
     -- Colors
     local get_hex = require('cokeline.hlgroups').get_hl_attr
-    local purple = '#854dff'
-    local green = '#50fa7b'
-    local yellow = '#F1FA8C'
+    local purple = '#eaac8b'
+    local green = '#e56b6f'
+    local yellow = '#b56576'
 
     -- Function to get diagnostic severity for a buffer
     local get_max_diagnostic_severity = function(buffer)
@@ -62,7 +62,7 @@ return {
             text = function(buf)
               return '🬗🬥🬢🬤🬶🬢🬶🬢🬗🬥🬢🬤🬶🬢🬗🬥🬢🬤🬶🬢🬗🬥🬢🬤🬶🬢🬗🬥🬢🬤🬥🬶🬢🬗🬥🬢🬤🬶🬢'
             end,
-            fg = purple,
+            fg = "#e56b6f",
             bg = function() return get_hex('NvimTreeNormal', 'bg') end,
             bold = true,
           },
@@ -72,12 +72,12 @@ return {
         {
           text = '⫼',
           align = 'center',
-          fg = purple,
+          fg = "#e56b6f",
         },
         {
           -- text = function(buffer) return (buffer.index ~= 1) and '⫼ ' or '  ' end,
           text = '  ',
-          fg = purple,
+          fg = "#e56b6f",
         },
         {
           text = function(buffer)
@@ -120,7 +120,7 @@ return {
               return '  '
             end
           end,
-          fg = yellow,
+          fg = "#eaac8b",
         },
         {
           text = '󰖭',
@@ -140,4 +140,3 @@ return {
     end, { desc = "Pick a buffer to focus" })
   end,
 }
-

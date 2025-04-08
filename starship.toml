@@ -28,46 +28,46 @@ discharging_symbol = "⚡"
 
 [[battery.display]]
 threshold = 30
-style = "bold red"
+style = "#EAAC8B"
 
 [character]
 format = "$symbol "
-error_symbol = "[❭](bold red)"
-success_symbol = "[❭](bold yellow)"
-vimcmd_symbol = "[❭ ](bold green)"
-vimcmd_replace_one_symbol = "[❭ ](bold purple)"
-vimcmd_replace_symbol = "[❭ ](bold purple)"
-vimcmd_visual_symbol = "[❭ ](bold yellow)"
+error_symbol = "[❭](#EAAC8B)"
+success_symbol = "[❭](#EAAC8B)"
+vimcmd_symbol = "[❭ ](#EAAC8B)"
+vimcmd_replace_one_symbol = "[❭ ](#EAAC8B)"
+vimcmd_replace_symbol = "[❭ ](#EAAC8B)"
+vimcmd_visual_symbol = "[❭ ](#EAAC8B)"
 
 [directory]
 read_only = " 󰌾"
 truncate_to_repo = true
-style = "bold cyan underline"
+style = "#EAAC8B underline"
 truncation_length = 4
 truncation_symbol = "../"
 format = "[$path]($style)[$lock_symbol]($lock_style) "
 
 [git_branch]
 symbol = " "
-style = "bold purple"
-format = "[on](bold dimmed white)[ ⟪ ](bold green)[$symbol$branch(:$remote_branch)]($style)[ ⟫ ](bold green)"
+style = "#EAAC8B"
+format = "[on](bold dimmed white)[ ⟪ ](#EAAC8B)[$symbol$branch(:$remote_branch)]($style)[ ⟫ ](#EAAC8B)"
 
 [git_commit]
 commit_hash_length = 7
 tag_symbol = '🔖 '
 format = '[\($hash$tag\)]($style) '
-style = "bold yellow"
+style = "#FEAAC8B"
 only_detached = true
 disabled = false
 
 [git_state]
 # format = '([\[$conflicted$renamed$modified$staged$behind$deleted\]]($style) )'
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-cherry_pick = '[🍒 PICKING](bold red)'
-merge = '[󰘭 MERGING](bold red)'
-rebase = '[󰘭 REBASING](bold red)'
-revert = '[⎌ REVERTING](bold red)'
-bisect = '[󰃻 BISECTING](bold red)'
+cherry_pick = '[🍒 PICKING](#EAAC8B)'
+merge = '[󰘭 MERGING](#EAAC8B)'
+rebase = '[󰘭 REBASING](#EAAC8B)'
+revert = '[⎌ REVERTING](#EAAC8B)'
+bisect = '[󰃻 BISECTING](#EAAC8B)'
 disabled = false
 
 [git_status]
@@ -80,7 +80,7 @@ up_to_date = '✓'
 untracked = '🤷'
 stashed = '📦'
 modified = '📝'
-staged = '[++\($count\)](bold yellow)'
+staged = '[++\($count\)](#EAAC8B)'
 renamed = '👅'
 deleted = ''
  
@@ -92,13 +92,13 @@ zsh_indicator = ''
 powershell_indicator = '_'
 cmd_indicator = ''
 unknown_indicator = '?sh'
-style = 'bold yellow'
+style = '#EAAC8B'
 disabled = false
 
 [shlvl]
 disabled = false
 format = '[$symbol$shlvl]($style)'
-style = 'bold green'
+style = '#EAAC8B'
 repeat = true
 symbol = '❯'
 repeat_offset = 1
@@ -106,19 +106,19 @@ threshold = 0
 
 [cmd_duration]
 min_time = 100  # miliseconds
-format = "[](bold cyan) [took](bold dimmed white) [$duration]($style) "
-style = "bold yellow"
+format = "[](#EAAC8B) [took](bold dimmed white) [$duration]($style) "
+style = "#EAAC8B"
 disabled = false
 
 [status]
 format = ' [$symbol$int $signal_name]($style) '
-pipestatus_format = '[\[$pipestatus\] => [$symbol$int$common_meaning$signal_name$maybe_int]($style)](bold cyan) '
-pipestatus_separator = '[|](bold cyan)'
-style = 'fg:yellow'
-symbol = '[](bold red) '
+pipestatus_format = '[\[$pipestatus\] => [$symbol$int$common_meaning$signal_name$maybe_int]($style)](#F8D3BC) '
+pipestatus_separator = '[|](#EAAC8B)'
+style = 'fg:#EAAC8B'
+symbol = '[](#B56576) '
 success_symbol = ' '
-not_found_symbol = '[](bold red) '
-sigint_symbol = '[](bold red)  '
+not_found_symbol = '[](#B56576) '
+sigint_symbol = '[](#B56576)  '
 signal_symbol = '󱐌 '
 recognize_signal_code = true
 map_symbol = true
@@ -128,31 +128,31 @@ disabled = false
 [hostname]
 ssh_symbol = " "
 ssh_only = false
-format = '[\[](bold green)[$hostname]($style)[\]](bold green)'
+format = '[\[](#EAAC8B)[$hostname]($style)[\]](#EAAC8B)'
 trim_at = "-"
-style = "bold yellow"
+style = "#EAAC8B"
 disabled = false
 
 [username]
-format = '[\[](bold green)[$user]($style)[\]](bold green)'
-style_user = "bold blue"
+format = '[\[](#EAAC8B)[$user]($style)[\]](#EAAC8B)'
+style_user = "#EAAC8B"
 style_root = 'black bold'
 disabled = false
 show_always = true
 
 [os]
 format = "[$symbol]($style)"
-style = "bold dimmed white"
+style = "#EAAC8B"
 disabled = false
 
 [sudo]
 symbol = "👩🏻‍💻 "
-style = "bold dimmed white"
+style = "#EAAC8B"
 disabled = false
 
 [jobs]
 format = '[$symbol$number]($style)'
-style = "bold purple"
+style = "#EAAC8B"
 symbol = '✦'
 number_threshold = 2
 symbol_threshold = 0
@@ -160,7 +160,7 @@ symbol_threshold = 0
 [time]
 time_format = "%T"
 format = "[󱫫 $time]($style)"
-style = "bold green"
+style = "#EAAC8B"
 disabled = false
 
 [aws]
@@ -184,12 +184,12 @@ symbol = " "
 symbol = " "
 
 [custom.dockerfile]
-detect_files = ["Dockerfile"] # can specify filters but wildcards are not supported
-format = "[ 🐋](blue bold)"
-symbol = "🐋"
+detect_files = ["Dockerfile"] # can specify filters but wildcards are not supporteformat = "[ 🐋](#451810)"
+format = "[ 🐋](#EAAC8B)"
 
 [elixir]
 symbol = " "
+style = '#EAAC8B'
 
 [elm]
 symbol = " "
@@ -205,6 +205,7 @@ symbol = " "
 
 [haskell]
 symbol = " "
+style = '#EAAC8B'
 
 [haxe]
 symbol = " "
@@ -223,6 +224,7 @@ symbol = " "
 
 [memory_usage]
 symbol = "󰍛 "
+style = '#EAAC8B'
 
 [meson]
 symbol = "󰔷 "
@@ -232,11 +234,11 @@ symbol = "󰆥 "
 
 [nix_shell]
 symbol = "  "
-impure_msg = '[💩](bold red)'
-pure_msg = '[😇](bold green)'
-unknown_msg = '[unknown](bold yellow)'
-format = 'via [$symbol$state( \($name\))](bold blue) '
-style = 'bold blue'
+impure_msg = '[💩](#EAAC8B)'
+pure_msg = '[😇](#EAAC8B)'
+unknown_msg = '[unknown](#F8D3BC)'
+format = 'via [$symbol$state( \($name\))](#EAAC8B) '
+style = '#EAAC8B'
 disabled = false
 # heuristic = true
 
@@ -281,7 +283,7 @@ RedHatEnterprise = " "
 Redox = "󰀘 "
 Solus = "󰠳 "
 SUSE = " "
-Ubuntu = "[](bold red)"
+Ubuntu = "[](#EAAC8B)"
 Unknown = " "
 Windows = "󰍲 "
 
@@ -301,7 +303,7 @@ detect_files = ['.python-version', 'Pipfile', '__init__.py', 'pyproject.toml', '
 detect_folders = []
 pyenv_version_name = true
 pyenv_prefix = ""
-style = "bold yellow"
+style = "#EAAC8B"
 
 [rlang]
 symbol = "󰟔 "
@@ -311,6 +313,7 @@ symbol = " "
 
 [rust]
 symbol = " "
+style = '#EAAC8B'
 
 [scala]
 symbol = " "
@@ -318,12 +321,12 @@ symbol = " "
 [custom.valgrind]
 when  = "ps aux | grep valgrind | grep -v grep"
 command = "~/.dotfiles/scripts/starship/valgrind-pid.sh"
-format = "[⟪ ](bold red)[$symbol]($style) [$output](dimmed underline)[ ⟫](bold red) "
-style = "dimmed white"
+format = "[⟪ ](#EAAC8B)[$symbol]($style) [$output](dimmed underline)[ ⟫](#EAAC8B) "
+style = "#EAAC8B"
 symbol = "󱗀"
 
 # kubernetes
 [kubernetes]
 symbol = "⛵ "
-style = "bold dimmed green"
+style = "#EAAC8B"
 disabled = false

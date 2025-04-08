@@ -798,8 +798,8 @@ return {
       },
       -- colors for enabled/disabled states
       color = {
-        enabled = "green",
-        disabled = "yellow",
+        enabled = "#eaac8b",
+        disabled = "#6d597a",
       },
       wk_desc = {
         enabled = "Disable ",

@@ -99,7 +99,43 @@ return {
     ---Theme to be used for generating highlight groups dynamically.
     ---
     ---@type barbecue.Config.theme
-    theme = "auto",
+    theme = {
+      normal = { fg = "#EAAC8B" },
+      ellipsis = { fg = "#b56576" },
+      separator = { fg = "#E56B6F" },
+      modified = { fg = "#355070" },
+
+      dirname = { fg = "#b56576" },
+      basename = { fg = "#EAAC8B", bold = true },
+      context = { fg = "#E56B6F" },
+
+      context_file = { fg = "#EAAC8B" },
+      context_module = { fg = "#E56B6F" },
+      context_namespace = { fg = "#E56B6F" },
+      context_package = { fg = "#CE5641" },
+      context_class = { fg = "#E56B6F" },
+      context_method = { fg = "#b56576" },
+      context_property = { fg = "#EAAC8B" },
+      context_field = { fg = "#EAAC8B" },
+      context_constructor = { fg = "#b56576" },
+      context_enum = { fg = "#CE5641" },
+      context_interface = { fg = "#E56B6F" },
+      context_function = { fg = "#b56576" },
+      context_variable = { fg = "#EAAC8B" },
+      context_constant = { fg = "#CE5641" },
+      context_string = { fg = "#E56B6F" },
+      context_number = { fg = "#b56576" },
+      context_boolean = { fg = "#b56576" },
+      context_array = { fg = "#E56B6F" },
+      context_object = { fg = "#E56B6F" },
+      context_key = { fg = "#CE5641" },
+      context_null = { fg = "#355070" },
+      context_enum_member = { fg = "#EAAC8B" },
+      context_struct = { fg = "#b56576" },
+      context_event = { fg = "#CE5641" },
+      context_operator = { fg = "#E56B6F" },
+      context_type_parameter = { fg = "#b56576" },
+    },
 
     ---Whether context text should follow its icon's color.
     ---
