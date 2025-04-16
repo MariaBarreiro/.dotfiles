@@ -87,7 +87,7 @@ return {
         NeoTreeRootName = { fg = "#eaac8b", bold = true, italic = true },
         NeoTreeIndentMarker = { fg = "#b56576" },
         NeoTreeSignColumn = { fg = "#eaac8b" },
-        NeoTreeFileIcon = { fg = "45462A", bold = true },
+        NeoTreeFileIcon = { fg = "#45462A", bold = true },
         NeoTreeDotfile = { fg = "#b56576" },
         NeoTreeGitUnstaged = { fg = "#b56576" },
         NeoTreeGitModified = { fg = "#b56576" },

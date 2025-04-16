@@ -31,7 +31,7 @@
  plug "web-search"
  plug "zap-zsh/fzf"
  plug "zap-zsh/web-search"
- plug "jeffreytse/zsh-vi-mode"
+ # plug "jeffreytse/zsh-vi-mode"
 
 ###############
 ### Aliases ###
