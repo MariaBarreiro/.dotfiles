@@ -43,6 +43,7 @@ alias ccw='cc -Wall -Wextra -Werror -g'
 # Neovim
 alias v='nvim'
 alias sv='sudo -E nvim'
+alias clear_nvim='rm -fr ~/.local/share/nvim'
 
 # git
 alias ga='git add'
