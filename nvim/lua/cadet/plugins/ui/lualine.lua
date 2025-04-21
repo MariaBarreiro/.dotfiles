@@ -96,10 +96,10 @@ return {
           -- {
           --   require("noice").api.statusline.mode.get,
           --   cond = require("noice").api.statusline.mode.has,
-          --   color = { fg = "#6d597a" },
+          --   color = { fg = "#6C584C" },
           -- },
-          { virtual_env, color = { fg = "#b56576" } },
-          { nix_shell, color = { fg = "#6d597a" } },
+          { virtual_env, color = { fg = "#ADC178" } },
+          { nix_shell, color = { fg = "#6C584C" } },
           ollama_component,
         },
         -- Right side
@@ -107,7 +107,7 @@ return {
           {
             lazy_status.updates,
             cond = lazy_status.has_updates,
-            color = { fg = "#6d597a" },
+            color = { fg = "#6C584C" },
           },
           { "encoding" },
           { "fileformat" },

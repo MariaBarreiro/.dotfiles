@@ -18,7 +18,7 @@ scan_timeout = 77
 [localip]
 ssh_only = true
 format = '[$localipv4]($style) '
-style = "bold dimmed white"
+style = "#F0EAD2"
 disabled = false
 
 [battery]
@@ -28,46 +28,46 @@ discharging_symbol = "⚡"
 
 [[battery.display]]
 threshold = 30
-style = "#EAAC8B"
+style = "#F0EAD2"
 
 [character]
 format = "$symbol "
-error_symbol = "[❭](#EAAC8B)"
-success_symbol = "[❭](#EAAC8B)"
-vimcmd_symbol = "[❭ ](#EAAC8B)"
-vimcmd_replace_one_symbol = "[❭ ](#EAAC8B)"
-vimcmd_replace_symbol = "[❭ ](#EAAC8B)"
-vimcmd_visual_symbol = "[❭ ](#EAAC8B)"
+error_symbol = "[❭](#F0EAD2)"
+success_symbol = "[❭](#F0EAD2)"
+vimcmd_symbol = "[❭ ](#F0EAD2)"
+vimcmd_replace_one_symbol = "[❭ ](#F0EAD2)"
+vimcmd_replace_symbol = "[❭ ](#F0EAD2)"
+vimcmd_visual_symbol = "[❭ ](#F0EAD2)"
 
 [directory]
 read_only = " 󰌾"
 truncate_to_repo = true
-style = "#EAAC8B underline"
+style = "#F0EAD2 underline"
 truncation_length = 4
 truncation_symbol = "../"
 format = "[$path]($style)[$lock_symbol]($lock_style) "
 
 [git_branch]
 symbol = " "
-style = "#EAAC8B"
-format = "[on](bold dimmed white)[ ⟪ ](#EAAC8B)[$symbol$branch(:$remote_branch)]($style)[ ⟫ ](#EAAC8B)"
+style = "#F0EAD2"
+format = "[on](bold dimmed white)[ ⟪ ](#F0EAD2)[$symbol$branch(:$remote_branch)]($style)[ ⟫ ](#F0EAD2)"
 
 [git_commit]
 commit_hash_length = 7
 tag_symbol = '🔖 '
 format = '[\($hash$tag\)]($style) '
-style = "#FEAAC8B"
+style = "#F0EAD2"
 only_detached = true
 disabled = false
 
 [git_state]
 # format = '([\[$conflicted$renamed$modified$staged$behind$deleted\]]($style) )'
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-cherry_pick = '[🍒 PICKING](#EAAC8B)'
-merge = '[󰘭 MERGING](#EAAC8B)'
-rebase = '[󰘭 REBASING](#EAAC8B)'
-revert = '[⎌ REVERTING](#EAAC8B)'
-bisect = '[󰃻 BISECTING](#EAAC8B)'
+cherry_pick = '[🍒 PICKING](#F0EAD2)'
+merge = '[󰘭 MERGING](#F0EAD2)'
+rebase = '[󰘭 REBASING](#F0EAD2)'
+revert = '[⎌ REVERTING](#F0EAD2)'
+bisect = '[󰃻 BISECTING](#F0EAD2)'
 disabled = false
 
 [git_status]
@@ -80,7 +80,7 @@ up_to_date = '✓'
 untracked = '🤷'
 stashed = '📦'
 modified = '📝'
-staged = '[++\($count\)](#EAAC8B)'
+staged = '[++\($count\)](#F0EAD2)'
 renamed = '👅'
 deleted = ''
  
@@ -92,13 +92,13 @@ zsh_indicator = ''
 powershell_indicator = '_'
 cmd_indicator = ''
 unknown_indicator = '?sh'
-style = '#EAAC8B'
+style = '#F0EAD2'
 disabled = false
 
 [shlvl]
 disabled = false
 format = '[$symbol$shlvl]($style)'
-style = '#EAAC8B'
+style = '#DDE5B6'
 repeat = true
 symbol = '❯'
 repeat_offset = 1
@@ -106,19 +106,19 @@ threshold = 0
 
 [cmd_duration]
 min_time = 100  # miliseconds
-format = "[](#EAAC8B) [took](bold dimmed white) [$duration]($style) "
-style = "#EAAC8B"
+format = "[](#DDE5B6) [took](bold dimmed white) [$duration]($style) "
+style = "#DDE5B6"
 disabled = false
 
 [status]
 format = ' [$symbol$int $signal_name]($style) '
-pipestatus_format = '[\[$pipestatus\] => [$symbol$int$common_meaning$signal_name$maybe_int]($style)](#F8D3BC) '
-pipestatus_separator = '[|](#EAAC8B)'
-style = 'fg:#EAAC8B'
-symbol = '[](#B56576) '
+pipestatus_format = '[\[$pipestatus\] => [$symbol$int$common_meaning$signal_name$maybe_int]($style)](#F0EAD2) '
+pipestatus_separator = '[|](#F0EAD2)'
+style = 'fg:#ADC178'
+symbol = '[](#A98467) '
 success_symbol = ' '
-not_found_symbol = '[](#B56576) '
-sigint_symbol = '[](#B56576)  '
+not_found_symbol = '[](#A98467) '
+sigint_symbol = '[](#A98467)  '
 signal_symbol = '󱐌 '
 recognize_signal_code = true
 map_symbol = true
@@ -128,31 +128,31 @@ disabled = false
 [hostname]
 ssh_symbol = " "
 ssh_only = false
-format = '[\[](#EAAC8B)[$hostname]($style)[\]](#EAAC8B)'
+format = '[\[](#ADC178)[$hostname]($style)[\]](#ADC178)'
 trim_at = "-"
-style = "#EAAC8B"
+style = "#ADC178"
 disabled = false
 
 [username]
-format = '[\[](#EAAC8B)[$user]($style)[\]](#EAAC8B)'
-style_user = "#EAAC8B"
-style_root = 'black bold'
+format = '[\[](#DDE5B6)[$user]($style)[\]](#DDE5B6)'
+style_user = "#DDE5B6"
+style_root = '#DDE5B6'
 disabled = false
 show_always = true
 
 [os]
 format = "[$symbol]($style)"
-style = "#EAAC8B"
+style = "#F0EAD2"
 disabled = false
 
 [sudo]
 symbol = "👩🏻‍💻 "
-style = "#EAAC8B"
+style = "#F0EAD2"
 disabled = false
 
 [jobs]
 format = '[$symbol$number]($style)'
-style = "#EAAC8B"
+style = "#F0EAD2"
 symbol = '✦'
 number_threshold = 2
 symbol_threshold = 0
@@ -160,7 +160,7 @@ symbol_threshold = 0
 [time]
 time_format = "%T"
 format = "[󱫫 $time]($style)"
-style = "#EAAC8B"
+style = "#ADC178"
 disabled = false
 
 [aws]
@@ -171,7 +171,7 @@ symbol = " "
 
 [c]
 symbol = " "
-format = '[via](bold dimmed white) [$symbol$name $version]($style) '
+format = '[via]("#F0EAD2") [$symbol$name $version]($style) '
 commands = [[ 'cc', '--version' ], [ 'gcc', '--version' ], [ 'clang', '--version' ]]
 
 [conda]
@@ -185,11 +185,11 @@ symbol = " "
 
 [custom.dockerfile]
 detect_files = ["Dockerfile"] # can specify filters but wildcards are not supporteformat = "[ 🐋](#451810)"
-format = "[ 🐋](#EAAC8B)"
+format = "[ 🐋](#F0EAD2)"
 
 [elixir]
 symbol = " "
-style = '#EAAC8B'
+style = '#F0EAD2'
 
 [elm]
 symbol = " "
@@ -205,7 +205,7 @@ symbol = " "
 
 [haskell]
 symbol = " "
-style = '#EAAC8B'
+style = '#F0EAD2'
 
 [haxe]
 symbol = " "
@@ -224,7 +224,7 @@ symbol = " "
 
 [memory_usage]
 symbol = "󰍛 "
-style = '#EAAC8B'
+style = '#F0EAD2'
 
 [meson]
 symbol = "󰔷 "
@@ -234,11 +234,11 @@ symbol = "󰆥 "
 
 [nix_shell]
 symbol = "  "
-impure_msg = '[💩](#EAAC8B)'
-pure_msg = '[😇](#EAAC8B)'
-unknown_msg = '[unknown](#F8D3BC)'
-format = 'via [$symbol$state( \($name\))](#EAAC8B) '
-style = '#EAAC8B'
+impure_msg = '[💩](#F0EAD2)'
+pure_msg = '[😇](#F0EAD2)'
+unknown_msg = '[unknown](#F0EAD2)'
+format = 'via [$symbol$state( \($name\))](#F0EAD2) '
+style = '#F0EAD2'
 disabled = false
 # heuristic = true
 
@@ -283,7 +283,7 @@ RedHatEnterprise = " "
 Redox = "󰀘 "
 Solus = "󰠳 "
 SUSE = " "
-Ubuntu = "[](#EAAC8B)"
+Ubuntu = "[](#ADC178)"
 Unknown = " "
 Windows = "󰍲 "
 
@@ -303,7 +303,7 @@ detect_files = ['.python-version', 'Pipfile', '__init__.py', 'pyproject.toml', '
 detect_folders = []
 pyenv_version_name = true
 pyenv_prefix = ""
-style = "#EAAC8B"
+style = "#ADC178"
 
 [rlang]
 symbol = "󰟔 "
@@ -313,7 +313,7 @@ symbol = " "
 
 [rust]
 symbol = " "
-style = '#EAAC8B'
+style = '#ADC178'
 
 [scala]
 symbol = " "
@@ -321,12 +321,12 @@ symbol = " "
 [custom.valgrind]
 when  = "ps aux | grep valgrind | grep -v grep"
 command = "~/.dotfiles/scripts/starship/valgrind-pid.sh"
-format = "[⟪ ](#EAAC8B)[$symbol]($style) [$output](dimmed underline)[ ⟫](#EAAC8B) "
-style = "#EAAC8B"
+format = "[⟪ ](#ADC178)[$symbol]($style) [$output](dimmed underline)[ ⟫](#ADC178) "
+style = "#ADC178"
 symbol = "󱗀"
 
 # kubernetes
 [kubernetes]
 symbol = "⛵ "
-style = "#EAAC8B"
+style = "#ADC178"
 disabled = false
