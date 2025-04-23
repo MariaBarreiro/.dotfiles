@@ -9,7 +9,7 @@ return {
       },
       -- customize dracula color palette
       colors = {
-        bg = "#ADC178",
+        bg = "#2F3E46",
         fg = "#F0EAD2",
         selection = "#355070",
         comment = "#DDE5B6",
@@ -19,7 +19,7 @@ return {
         green = "#F0EAD2",
         purple = "#DDE5B6",
         cyan = "#F0EAD2",
-        pink = "#6C584C",
+        pink = "#ADC178",
         bright_red = "#6C584C",
         bright_green = "#F0EAD2",
         bright_yellow = "#F0EAD2",
@@ -32,40 +32,40 @@ return {
         gutter_fg = "#DDE5B6",
         nontext = "#ADC178",
         white = "#F0EAD2",
-        black = "#ADC178",
+        black = "#1B1B2F",
       },
       -- show the '~' characters after the end of buffers
       show_end_of_buffer = true,    -- default false
       -- use transparent background
       transparent_bg = true,        -- default false
       -- set custom lualine background color
-      lualine_bg_color = "#ADC178", -- default nil
+      lualine_bg_color = "#2F3E46", -- default nil
       -- set italic comment
         italic_comment = true,        -- default false
       -- overrides the default highlights with table see `:h synIDattr`
       overrides = {
         Normal = { bg = "NONE" },
-        FloatBorder = { fg = "#F0EAD2", bg = "#ADC178" },
+        FloatBorder = { fg = "#F0EAD2", bg = "#2F3E46" },
         NonText = { bg = "#ADC178" },
         Search = { bg = "#355070" },
         CurSearch = { bg = "#355070", fg = "#6C584C" },
         WhichKey = { fg = "#F0EAD2" },
         WhichKeyFloat = { bg = "#ADC178" },
         WhichKeySeparator = { fg = "#DDE5B6" },
-        TelescopeNormal = { bg = "#ADC178" },
-        TelescopeSelection = { bg = "#DDE5B6", fg = "#ADC178" },
+        TelescopeNormal = { bg = "#2F3E46" },
+        TelescopeSelection = { bg = "#DDE5B6", fg = "#2F3E46" },
         TelescopePreviewBorder = { fg = "#F0EAD2" },
         TelescopeResultsBorder = { fg = "#F0EAD2" },
         TelescopePromptBorder = { fg = "#F0EAD2" },
         TelescopeBorder = { fg = "#F0EAD2" },
         TermCursor = { fg = "#F0EAD2" },
-        NormalFloat = { bg = "#ADC178" },
-        WinSeparator = { fg = "#DDE5B6", bg = "#ADC178" },
+        NormalFloat = { bg = "#2F3E46" },
+        WinSeparator = { fg = "#DDE5B6", bg = "#2F3E46" },
         NotifyBackground = { bg = "#ADC178" },
         NoiceCmdlinePopupBorder = { fg = "#F0EAD2" },
         NoiceCmdlineIcon = { fg = "#F0EAD2" },
         BufferLineFill = { bg = "#ADC178" },
-        StatusLine = { bg = "#ADC178" },
+        StatusLine = { bg = "#2f3e46" },
         NvimTreeWinSeparator = { fg = "#DDE5B6", bg = "#ADC178" },
         NvimTreeFolderArrowClosed = { fg = "#F0EAD2" },
         NvimTreeFolderArrowOpen = { fg = "#F0EAD2" },

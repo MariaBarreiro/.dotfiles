@@ -10,6 +10,8 @@ return {
     local is_picking_focus = require('cokeline.mappings').is_picking_focus
     local is_picking_close = require('cokeline.mappings').is_picking_close
     -- Colors
+    local mist = '#2F3E46'
+    local moon = '#1B1B2F'
     local get_hex = require('cokeline.hlgroups').get_hl_attr
     local purple = '#F0EAD2'
     local green = '#6C584C'
@@ -72,12 +74,12 @@ return {
         {
           text = '⫼',
           align = 'center',
-          fg = "#6C584C",
+          fg = mist, 
         },
         {
           -- text = function(buffer) return (buffer.index ~= 1) and '⫼ ' or '  ' end,
           text = '  ',
-          fg = "#6C584C",
+          fg = mist,
         },
         {
           text = function(buffer)

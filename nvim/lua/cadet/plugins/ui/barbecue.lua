@@ -100,9 +100,9 @@ return {
     ---
     ---@type barbecue.Config.theme
     theme = {
-      normal = { fg = "#F0EAD2" },
+      normal = { fg = "#F0EAD2", bg = "#1B1B2F" },
       ellipsis = { fg = "#ADC178" },
-      separator = { fg = "#6C584C" },
+      separator = { fg = "#6C584C", bg = "#1B1B2F" },
       modified = { fg = "#355070" },
 
       dirname = { fg = "#ADC178" },
@@ -111,7 +111,7 @@ return {
 
       context_file = { fg = "#F0EAD2" },
       context_module = { fg = "#6C584C" },
-      context_namespace = { fg = "#6C584C" },
+      context_namespace = { fg = "#1B1B2F" },
       context_package = { fg = "#A98467" },
       context_class = { fg = "#6C584C" },
       context_method = { fg = "#ADC178" },
@@ -131,9 +131,9 @@ return {
       context_key = { fg = "#A98467" },
       context_null = { fg = "#355070" },
       context_enum_member = { fg = "#F0EAD2" },
-      context_struct = { fg = "#ADC178" },
+      context_struct = { fg = "#2F3E46" },
       context_event = { fg = "#A98467" },
-      context_operator = { fg = "#6C584C" },
+      context_operator = { fg = "#1B1B2F" },
       context_type_parameter = { fg = "#ADC178" },
     },
 
