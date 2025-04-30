@@ -65,3 +65,7 @@ alias gl='git pull'
 
 # Load Homebrew config script
 source $HOME/.brewconfig.zsh
+
+if [[ $USER == "maria" ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
